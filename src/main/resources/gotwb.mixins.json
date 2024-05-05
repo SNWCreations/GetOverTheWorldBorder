@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "snw.gotwb.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "GetOverTheWorldBorder.refmap.json",
+  "mixins": [
+    "EntityMixin"
+  ],
+  "client": [
+    "WorldBorderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
