@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "snw.gotwb.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "GetOverTheWorldBorder.refmap.json",
+  "refmap": "gotwb.refmap.json",
   "mixins": [
     "EntityMixin"
   ],
