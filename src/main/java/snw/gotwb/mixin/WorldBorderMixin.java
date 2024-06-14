@@ -17,22 +17,27 @@ public abstract class WorldBorderMixin {
     private void alwaysIn(AABB p_61936_, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
+
     @Inject(method = "isWithinBounds(DD)Z", at = @At("HEAD"), cancellable = true)
     private void alwaysIn(double p_156094_, double p_156095_, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
+
     @Inject(method = "isWithinBounds(Lnet/minecraft/core/BlockPos;)Z", at = @At("HEAD"), cancellable = true)
     private void alwaysIn(BlockPos p_61938_, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
+
     @Inject(method = "isWithinBounds(DDD)Z", at = @At("HEAD"), cancellable = true)
     private void alwaysIn(double p_187563_, double p_187564_, double p_187565_, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
+
     @Inject(method = "isWithinBounds(Lnet/minecraft/world/level/ChunkPos;)Z", at = @At("HEAD"), cancellable = true)
     private void alwaysIn(ChunkPos p_61928_, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
     }
+
     @Inject(method = "isInsideCloseToBorder", at = @At("HEAD"), cancellable = true)
     private void alwaysIn(Entity p_187567_, AABB p_187568_, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(true);
